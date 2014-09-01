@@ -15,15 +15,10 @@
             color:#F60;
         }
     </style>
-    <script src="js/Lottery.js" type="text/javascript" charset="utf-8"></script>
-</head>
-<body>
-	<center><label>已刮开 <span id="drawPercent">0%</span> 区域。</label></center>
-    <center><div id="lotteryContainer"></div></center>
     <script>
         window.onload = function () {
             var lottery = new Lottery('lotteryContainer', '#CCC', 'color', 300, 100, drawPercent);
-            lottery.init('http://www.baidu.com/img/bdlogo.gif', 'image');
+            lottery.init('generate.php', 'image');
 
             var drawPercentNode = document.getElementById('drawPercent');
 
@@ -33,5 +28,41 @@
         }
 
     </script>
+    <script src="js/Lottery.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<center><label>已刮开 <span id="drawPercent">0%</span> 区域。</label></center>
+    <center><div id="lotteryContainer"></div></center>
+
+	
+	<input type="text" id="" value="" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
